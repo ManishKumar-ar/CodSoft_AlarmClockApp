@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/alarm_label_padding"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.best.deskclock.widget.TextTime
+            android:id="@+id/digital_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_clock_vertical_margin"
+            android:textSize="@dimen/label_font_size"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/daysOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/alarm_clock_vertical_margin"
+            android:layout_marginTop="@dimen/alarm_clock_vertical_margin"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/label_font_size"
+            tools:text="M, T, W" />
+
+    </LinearLayout>
+
+    <com.best.deskclock.widget.EllipsizeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/label_margin_big"
+        android:layout_marginBottom="@dimen/alarm_clock_vertical_margin"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textSize="@dimen/label_font_size"
+            tools:text="Pick up kids" />
+    </com.best.deskclock.widget.EllipsizeLayout>
+
+</LinearLayout>

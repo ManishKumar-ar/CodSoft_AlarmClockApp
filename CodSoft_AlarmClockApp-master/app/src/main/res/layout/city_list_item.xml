@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/cities_list_item_height"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/index"
+        android:layout_width="74dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/label_text_size"
+        android:textStyle="bold" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/city_onoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/city_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:paddingStart="16dip"
+        android:paddingEnd="10dip"
+        android:singleLine="true" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/city_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dip" />
+</LinearLayout>
